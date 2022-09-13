@@ -12,7 +12,15 @@ def about():
         "first_name" : "Megan",
         "last_name" : "Paquin",
         "hobbies" : "Crafts",
-        "bio" : "enter bio here"
+        "bio" : "I have a Biomedical Engineering degree from Syracuse University and I am currently studying to be a web developer. I aspire to be a Software Engineer for medical devices and medical software. I served in the Army for 8 years."
     }
 
-    return render_template("about.html")
+    return render_template("about.html", about_dict=me)
+
+@app.get("/objects")
+def objects():
+    return render_template("objects.html")
+
+@app.get("/classes")
+def classes():
+    return render_template("classes.html")

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+
+
+
+{% block content %}
+    <h1>Home Page</h1>
+    <p>Welcome to the home page!</p>
+    <br>
+    <table class="table">
+        <tr class="table-dark">
+            <th scope="col">Objects</th>
+            <th scope="col">Classes</th>
+        </tr>
+        <tr>
+            <td>An instance</td>
+            <td>A blueprint</td>
+        </tr>
+        <tr>
+            <td>Collection of data</td>
+            <td>Instructions on how to package the data</td>
+        </tr>
+        <tr>
+            <td>Physical</td>
+            <td>Logical</td>
+        </tr>
+        <tr>
+            <td>Uses memory space</td>
+            <td>No memory space</td>
+        </tr>
+        <tr>
+            <td>Declared once</td>
+            <td>Declared for every new method</td>
+        </tr>
+
+    </table>
+{% endblock content %}
